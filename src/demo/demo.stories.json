@@ -1,0 +1,13 @@
+{
+	"title": "demo",
+	"parameters": {
+		"server": {
+			"id": "demo/index.html"
+		}
+	},
+	"stories": [
+		{
+			"name": "Overview"
+		}
+	]
+}

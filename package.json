@@ -1,0 +1,21 @@
+{
+  "name": "storybook-demo",
+  "scripts": {
+    "build:storybook": "rm -rf ./public/storybook/ && storybook build --output-dir ./public/storybook",
+    "build:webpack": "rm -rf public/dist && webpack --mode=production",
+    "start:server:app": "http-server --port 3000",
+    "start:server:storybook": "http-server ./public/storybook --port 3001",
+    "start:storybook": "rm -rf ./public/storybook/ && storybook dev --port 6006 --no-open",
+    "start:webpack": "rm -rf public/dist && webpack --mode=development"
+  },
+  "devDependencies": {
+    "@storybook/addon-webpack5-compiler-babel": "^3.0.3",
+    "@storybook/preview-api": "8.1.11",
+    "@storybook/server-webpack5": "8.1.11",
+    "babel-loader": "9.1.3",
+    "http-server": "^14.1.1",
+    "storybook": "8.1.11",
+    "webpack": "5.92.1",
+    "webpack-cli": "5.1.4"
+  }
+}
