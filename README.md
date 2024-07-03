@@ -16,60 +16,24 @@ npm install
 
 ## Usage
 
-## Developement
+**To reproduce infinite preview reload in production mode**
 
-**Terminal 1: Webpack**
+1. Start terminal 1 with the command: `npm run build:webpack`
+2. Start terminal 2 with the command: `npm run build:storybook`
+3. Start terminal 3 with the command: `npm run start:server:storybook`
+4. Open http://127.0.0.1:3001 to view the Storybook public build
+5. The Storybook preview is infinitely reloading like the video above
 
-To build the components assets with webpack
+**To reproduce error in development mode**
 
-```bash
-npm run start:webpack
-```
+1. Start terminal 1 with the command: `npm run start:webpack`
+2. Start terminal 2 with the command: `npm run start:storybook`
+3. Open http://localhost:6006 to view the Storybook in development mode
+4. The Storybook preview display an error in the DevTools console like the image above
 
-**Terminal 2: Storybook**
+**To test the component itself in standalone mode**
 
-To build the Storybook app (which contains the components in an iframe view)
-
-```bash
-npm run start:storybook
-```
-
-Open http://localhost:6006
-
-**Terminal 3: Server for the components preview**
-
-To simulate a server for a components standalone preview
-
-```bash
-npm run start:server:app
-```
-
-Open http://127.0.0.1:3000/demo
-
-## Production
-
-**Terminal 1: Webpack**
-
-To build the components assets with webpack
-
-```bash
-npm run build:webpack
-```
-
-**Terminal 2: Storybook**
-
-To build the Storybook app (which contains the components in an iframe view)
-
-```bash
-npm run build:storybook
-```
-
-**Terminal 3: Server for the Storybook app**
-
-To simulate a server for the Storybook app
-
-```bash
-make start-server-storybook
-```
-
-Open http://127.0.0.1:3001
+1. Start terminal 1 with the command: `npm run start:webpack`
+3. Start terminal 3 with the command: `npm run start:server:app`
+4. Open http://127.0.0.1:3000/demo to view the component itself in standalone mode
+5. The component preview is working correctly with the dynamic import

@@ -3,7 +3,7 @@
   "scripts": {
     "build:storybook": "rm -rf ./public/storybook/ && storybook build --output-dir ./public/storybook",
     "build:webpack": "rm -rf public/dist && webpack --mode=production",
-    "start:server:app": "http-server --port 3000",
+    "start:server:app": "http-server --port 3000 --cors",
     "start:server:storybook": "http-server ./public/storybook --port 3001",
     "start:storybook": "rm -rf ./public/storybook/ && storybook dev --port 6006 --no-open",
     "start:webpack": "rm -rf public/dist && webpack --mode=development"
