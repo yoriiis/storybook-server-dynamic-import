@@ -1,6 +1,6 @@
 Reproductible repository for an infinite preview reload when components contains dynamic import.
 
-See TODO
+See https://github.com/storybookjs/storybook/issues/28437
 
 ## Problems
 
